@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  height: 100vh;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 50px;
+  color: #FFF;
+  animation: titleAnimation 2s;
+}
+
+@keyframes titleAnimation {
+  from { transform: rotateX(90deg); }
+  to   { transform: rotateX(0deg);  }
+}
+
+.containerInput {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin: 34px 0;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.containerInput input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  color: #FFF;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+  color: gray;
+}
+
+
+.searchButton{
+  font-size: 20px;
+  color:gray;
+  background: transparent;
+  border: 0;
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.searchButton:hover{
+  transform: scale(1.2);
+  color: #FFF;
+}
+
+.main{
+  color: #FFF;
+}
